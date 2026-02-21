@@ -1,6 +1,6 @@
-# This will create or modify this file.
-# If there is an option that does not suit you, come back here and delete.
-# These options will give you an IDE vibe. 
+" This will create or modify this file.
+" If there is an option that does not suit you, come back here and delete.
+" These options will give you an IDE vibe. 
 
   syntax on                " Enable syntax highlighting
   set nocompatible         " Enable Vim's full power
