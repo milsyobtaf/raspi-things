@@ -1,0 +1,4 @@
+sleep 10s
+chromium http://URL1 http://URL2 --kiosk --noerrdialogs --disable-infobars --no-first-run --enable-features=OverlayScrollbar
+--start-maximized &
+~/scripts/switchtab.sh
