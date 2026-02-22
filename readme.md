@@ -2,6 +2,21 @@
 
 This is a repo to hold the bits and bobs I find useful for Raspberry Pi projects.
 
+## tl;dr
+
+### Grab this repo and drop it on the Pi:
+
+```sh
+mkdir ~/git && cd git
+https://github.com/milsyobtaf/raspi-things.git
+```
+
+### Make sure any of the necessary deps are installed
+
+```sh
+sudo apt install wtype unclutter vim
+```
+
 ## `scripts`
 
 ### `monitorpower.sh`
@@ -17,13 +32,15 @@ I am currently using this for two things:
 
 This is a small script that uses `wtype` to cycle `chromium` browser tabs on a cycled defined in a constant in the script. This script originally came from [raspberrypi.com](https://www.raspberrypi.com/tutorials/how-to-use-a-raspberry-pi-in-kiosk-mode/).
 
-`wtype` requires a `wayland` environment, so make sure you have that setup on the Raspberry Pi.
+`wtype` needs to be installed separately, and requires a `wayland` environment, so make sure you have that setup on the Raspberry Pi.
 
 #### `autostart`
 
 `switchtabs.sh` is being called from an `autostart` file, currently located at `.config/labwc/autostart` on my Raspberry Pi. This runs when the desktop environment loads, launches `chromium` in `kiosk` mode with two (or more) tabs, and then cycles those tabs.
 
 The `sleep 10` at the top is to ensure the internet connection is active before launching the browser. Not necessary, but avoids error screens.
+
+The `unclutter -idle 0` command is there to hide the cursor when in kiosk mode. You need to make sure `unclutter` is installed.
 
 ## `shell`
 
