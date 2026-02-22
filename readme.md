@@ -8,7 +8,10 @@ This is a repo to hold the bits and bobs I find useful for Raspberry Pi projects
 
 This is a small script to check the time of day and run a command depending on the defined schedule. You define the schedule and the desired commands as variables in the file, and then set the script to run on a `cron` schedule.
 
-I am currently using this to run `GPIO` commands to trigger a power off / on function on the [USB Switch / Multiplexer](https://www.8086.net/products#80860042) from 8086 Consultancy. This is connected to the USB power line on the LCD screen connected to this Raspberry Pi.
+I am currently using this for two things:
+
+- To run `GPIO` commands to trigger a power off / on function on the [USB Switch / Multiplexer](https://www.8086.net/products#80860042) from 8086 Consultancy. This is connected to the USB power line on the LCD screen connected to this Raspberry Pi.
+- To enabled / disable `deeper`
 
 ### `switchtabs.sh`
 
