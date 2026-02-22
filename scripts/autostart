@@ -4,4 +4,5 @@ chromium http://URL1 http://URL2 --kiosk \
 --enable-features=OverlayScrollbar \
 --disable-new-tab-first-run --ash-hide-cursor \
 --memory-pressure-off --start-maximized &
+unclutter -idle 0 &
 ~/scripts/switchtabs.sh
