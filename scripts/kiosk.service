@@ -1,0 +1,17 @@
+[Unit]
+ Description=Chromium Kiosk
+ After=graphical.target display-manager.service
+ 
+ [Service]
+ ExecStart=/usr/bin/chromium-browser --kiosk --disable-infobars --noerrdialogs --start-fullscreen http://bxb-liberty.local:8080 http://bxb-liberty.local:8080?heatmap
+ WorkingDirectory=/home/milsyobtaf
+ StandardOutput=inherit
+ StandardError=inherit
+ Restart=always
+ RestartSec=10
+ User=milsyobtaf
+ Environment="DISPLAY=:0"
+ Environment="XAUTHORITY=/home/milsyobtaf/.Xauthority"
+ 
+ [Install]
+ WantedBy=graphical.target
